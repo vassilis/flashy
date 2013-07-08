@@ -7,7 +7,7 @@ var Flashy = Flashy || {};
 Flashy.message = function(type, message) {
   var container = $('#flash');
 
-  container.append($("<div/>").
+  container.html($("<div/>").
     addClass("alert").
     addClass("alert-" + type).
     append($("<button/>").
