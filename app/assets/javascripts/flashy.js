@@ -4,8 +4,9 @@
 
 var Flashy = Flashy || {};
 
-Flashy.message = function(type, message, replace = false) {
-	var container = $('#flash');
+Flashy.message = function(type, message, replace) {
+	var container = $('#flash'),
+		replace = replace || false;
 
 	content = ($("<div/>").
 		addClass("alert").
