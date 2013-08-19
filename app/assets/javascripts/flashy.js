@@ -18,9 +18,11 @@ Flashy.message = function(type, message, replace) {
 			html('&times;')).
 		append(message));
 
-	if (replace) {
-		container.html(content)
-	} else {
-		container.append(content)
+	if ($.trim(message).length) {
+		if (replace) {
+			container.html(content)
+		} else {
+			container.append(content)
+		}
 	}
 };
